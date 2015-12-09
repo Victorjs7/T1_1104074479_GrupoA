@@ -1,0 +1,102 @@
+\documentclass[12pt]{report}
+%%\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize}
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ Ingeniería en Sistemas \\ Análisis y Diseño de Sistemas}
+
+\author{\includegraphics[width=9cm, height=7cm]{logo-unl.jpg} \\\\ {Victor Francisco Jumbo Sinchire} \\\\ \texttt{vfjumbos@unl.edu.ec}}
+
+\begin{document}
+\input{Analisis-concordance}
+\maketitle
+
+\begin{center}\textbf{CUESTIONARIO DE PREGUNTAS}\end{center}
+\textbf{¿Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así,¿cómo puede modificarse para que asimile las características únicas de éstas?}\\
+Si es posible aunque sea un enfoque diferente si se  puede ya  que los sistemas y aplicaciones basados en web involucran una mezcla entre las publicaciones impresas y el desarrollo de software, etc. Y nos basamos en las siguientes características:
+\begin{itemize}
+\item Uso intensivo de redes.
+\item Concurrencia.
+\item Carga impredecible.
+\item Rendimiento
+\item Disponibilidad.
+\item	Orientadas a los datos-Contenido sensible.
+\item	Evolución continúa.
+\item	Seguridad.
+\end{itemize}
+
+\begin{center}\textbf{RESOLUCIÓN DEL DATASET Titanic}\end{center}
+\textbf{Descripción}
+
+Este conjunto de datos proporciona información sobre el destino de los pasajeros en el primer viaje fatal del trasatlántico Titanic, que se resumen de acuerdo a la situación económica (clase ), el sexo, la edad y la supervivencia.
+\\\\
+
+\textbf{Contenido del Dataset Titanic}
+\begin{Schunk}
+\begin{Sinput}
+> Titanic
+\end{Sinput}
+\begin{Soutput}
+, , Age = Child, Survived = No
+
+      Sex
+Class  Male Female
+  1st     0      0
+  2nd     0      0
+  3rd    35     17
+  Crew    0      0
+
+, , Age = Adult, Survived = No
+
+      Sex
+Class  Male Female
+  1st   118      4
+  2nd   154     13
+  3rd   387     89
+  Crew  670      3
+
+, , Age = Child, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st     5      1
+  2nd    11     13
+  3rd    13     14
+  Crew    0      0
+
+, , Age = Adult, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st    57    140
+  2nd    14     80
+  3rd    75     76
+  Crew  192     20
+\end{Soutput}
+\end{Schunk}
+
+\textbf{¿Cuál es el número total de casos en el dataset?}
+
+\begin{Schunk}
+\begin{Sinput}
+> summary(Titanic)
+\end{Sinput}
+\begin{Soutput}
+Number of cases in table: 2201 
+Number of factors: 4 
+Test for independence of all factors:
+	Chisq = 1637.4, df = 25, p-value = 0
+	Chi-squared approximation may be incorrect
+\end{Soutput}
+\end{Schunk}
+
+\begin{center}
+\href{http://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[width=4cm, height=1.5cm]{cc.png}}
+\end{center}
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+%%\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize}
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ Ingeniería en Sistemas \\ Análisis y Diseño de Sistemas}
+
+\author{\includegraphics[width=9cm, height=7cm]{logo-unl.jpg} \\\\ {Victor Francisco Jumbo Sinchire} \\\\ \texttt{vfjumbos@unl.edu.ec}}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\begin{center}\textbf{CUESTIONARIO DE PREGUNTAS}\end{center}
+\textbf{¿Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así,¿cómo puede modificarse para que asimile las características únicas de éstas?}\\
+Si es posible aunque sea un enfoque diferente si se  puede ya  que los sistemas y aplicaciones basados en web involucran una mezcla entre las publicaciones impresas y el desarrollo de software, etc. Y nos basamos en las siguientes características:
+\begin{itemize}
+\item Uso intensivo de redes.
+\item Concurrencia.
+\item Carga impredecible.
+\item Rendimiento
+\item Disponibilidad.
+\item	Orientadas a los datos-Contenido sensible.
+\item	Evolución continúa.
+\item	Seguridad.
+\end{itemize}
+
+\begin{center}\textbf{RESOLUCIÓN DEL DATASET Titanic}\end{center}
+\textbf{Descripción}
+
+Este conjunto de datos proporciona información sobre el destino de los pasajeros en el primer viaje fatal del trasatlántico Titanic, que se resumen de acuerdo a la situación económica (clase ), el sexo, la edad y la supervivencia.
+\\\\
+
+\textbf{Contenido del Dataset Titanic}
+<<eval=TRUE, results=verbatim>>=
+Titanic
+@
+
+\textbf{¿Cuál es el número total de casos en el dataset?}
+
+<<eval=TRUE, results=verbatim>>=
+summary(Titanic)
+@
+
+\begin{center}
+\href{http://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[width=4cm, height=1.5cm]{cc.png}}
+\end{center}
+\end{document}
